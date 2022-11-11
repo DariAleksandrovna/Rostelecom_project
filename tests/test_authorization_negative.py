@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from variables import login, WRONG_LOGIN, WRONG_LOGIN_IDS, WRONG_PASSWORDS, WRONG_PASSWORD_IDS, PASSWORD, EMAIL
 
 
+# 8 негативных:
 class TestNegativeAuth:
     @pytest.mark.parametrize("email", WRONG_LOGIN, ids=WRONG_LOGIN_IDS)
     def test_negative_login(self, email, password=PASSWORD):
