@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from variables import EMAIL, PASSWORD, PHONE, login
 
 
+# 12 позитивных:
 class TestAuthorisation:
     def test_login_by_email(self):
         login(EMAIL, PASSWORD)
